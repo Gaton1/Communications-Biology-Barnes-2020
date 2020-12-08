@@ -37,7 +37,6 @@ plot(PCC.aov,2)
 TukeyHSD(PCC.aov)
 oneway.test(PCC~Treat,data=CompHeat,var.equal=FALSE)
 posthocTGH(y=CompHeat$PCC,x=CompHeat$Treat,method=c("games-howell"),digits=2)
-Omega2PCC<-(4*(28.326-1))/(4*(28.326-1)+20)
 
 #Density of Contest Competition Fig 2D
 DCC.aov<-aov(DCC~Treat,data=CompHeat)
@@ -48,7 +47,6 @@ plot(DCC.aov,2)
 TukeyHSD(DCC.aov)
 oneway.test(DCC~Treat,data=CompHeat,var.equal=FALSE)
 posthocTGH(y=CompHeat$DCC,x=CompHeat$Treat,method=c("games-howell"),digits=2)
-Omega2DCC<-(4*(6.5527-1))/(4*(6.5527-1)+20)
 
 #P of Intraspecific Competition Fig 3E
 PIC.aov<-aov(PIC~Treat,data=CompHeat)
